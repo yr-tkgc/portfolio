@@ -1,0 +1,297 @@
+{
+outline: none;
+}
+*,*::before,*::after {
+  box-sizing: border-box;
+}
+html{
+font-size: 100%;
+background-color: #ffffff;
+}
+body{
+	font-family: 'Noto Serif JP',serif;
+	font-size: 1rem;
+	line-height: 1.7;
+}
+h1, h2, h3, h4, h5, h6{
+font-weight: normal;
+line-height: 1;
+}
+a{
+text-decoration: none;
+font-size: 1rem;
+color: #404146;
+}
+a:hover{
+text-decoration: none;
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+}
+
+
+h1{
+	width: 100%;
+	height: auto;
+	text-align: center;
+}
+
+h2 {
+margin-top: 2rem;
+font-size: 2rem;
+font-weight: 600;
+text-align: center;
+}
+h3 {
+margin-top: 1rem;
+font-size: 1.7rem; }
+
+p {
+margin-top: 1rem;
+line-height: 2;
+color:#615C42;
+}
+
+header  {
+position: fixed;
+top:0;
+width: 100%;
+height: 3.7rem;
+z-index: 100;
+background-color: #9B7B71;
+box-shadow: 0 5px 12px 0 rgba(0, 0, 0, 0.5); }
+
+
+header h1 {
+padding: 0.75rem 1.5rem;
+text-align: left; }
+
+nav{
+background-color: #9B7B71;
+}
+
+
+nav ul {
+width: 100%;
+}
+
+nav ul:after {
+display: block;
+clear: both;
+content: ''; }
+
+nav li {
+float: left;
+}
+
+nav li a {
+transition-duration: 0.5s;
+padding: 0.9rem 1.5rem;
+display: block;
+font-weight: bold;
+color: #FFFFFF;
+text-decoration: none; }
+
+nav li a:hover, nav li a:focus {
+color: #9B7B71;
+background-color: #FFFFFF;
+}
+
+.content {
+width:100%;
+margin-top: 45%;
+padding-top: 50%;
+background-size:100% auto;
+background-image: url(../images/mainimage.jpg);
+background-repeat: no-repeat;
+background-position: center top;
+}
+
+
+
+
+.content main {
+width: 100%;
+padding: 0 0.9rem;
+margin-top: 3rem;
+ }
+
+.content main h1{
+
+}
+.content main h2 {
+margin-bottom: 1.5rem;
+  color: #9B7B71; }
+.content main p{
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.content main .lineup dl{
+  box-shadow: 8px 5px 10px 2px rgba(0,0,0,0.15);
+}
+.content main .lineup dl {
+width: 100%;
+padding-bottom: 0.75rem;
+margin-bottom: 1rem;}
+
+.content main .lineup dl:last-of-type {margin-right: 0; }
+.content main .lineup dt {
+text-align: center;
+margin: 0.9rem;
+font-size: 1.5rem;
+font-weight: bold;
+color: #353432;
+border-bottom:solid;
+border-color:#9B7B71;
+border-width:2px;
+
+
+ }
+
+ .content main .lineup dl a:hover{
+ opacity: 0.7;
+ }
+.content main .lineup dd img {
+width: 100%;
+
+ }
+
+.content main .lineup dd p{
+
+  padding-bottom: 1.5rem;
+}
+.content main .lineup dd .btn{
+	font-weight: bold;
+	padding: 10px 20px;
+	font-size: 14px;
+	transition: all 0.6s;
+	cursor: pointer;
+	background-color: #fff;
+    width: 80%;
+	margin: auto;
+}
+
+.content main .lineup dd li:nth-child(1) {margin-top: 0; }
+
+.content aside {
+padding: 0 0.9rem;
+width: 100%;
+ }
+
+.content aside h2{
+color: #425f51;
+font-size: 1.5rem;
+margin-top: 3rem;
+margin-bottom: 1rem;
+}
+
+.content aside dl{
+  text-align: center;
+}
+.content aside dt {
+font-size: 1px;
+line-height: 1; }
+.content aside dd {
+margin-top: 0.2rem; }
+.content aside a {
+display: block;
+margin-top: 1.5rem;
+color: #615C42; }
+.content aside a:first-of-type {margin-top: 0; }
+.content aside img:hover, #content aside img:focus {opacity: 0.7; }
+footer {
+margin-top: 3rem;
+padding: 0.9rem;
+color: #ffffff;
+text-align: center;
+background-color: #9B7B71;
+height: 3.7rem;
+}
+
+
+@media screen and (min-width:768px){
+
+
+	header{
+		display:flex;
+	}
+
+	header h1{
+		width:30%;
+	}
+
+
+	nav{
+    display: flex;
+		width:70%;
+	}
+nav ul {
+    flex-direction: row;
+    width: 70%;
+    margin: 0 auto;
+}
+
+	nav li a {
+transition-duration: 0.5s;
+padding: 1rem 1rem;
+display: block;
+font-weight: bold;
+color: #FFFFFF;
+text-decoration: none; }
+
+.content {
+width: 60%;
+margin: 0 auto; }
+
+.content:after {
+display: block;
+clear: both;
+content: ''; }
+
+.content {
+padding-top: 25%;
+}
+
+.content main {
+width: 100%;
+}
+
+.content main section:nth-of-type(1) h2 {margin-top: 0; }
+
+
+.content main .lineup div {
+margin-top: 1rem;
+display: flex;
+justify-content: space-between;
+}
+
+.content main .lineup dl {
+display: flex;
+flex-direction: column;
+width: 32%;
+ }
+
+.content main .lineup a dt{
+order: 2;
+}
+.content main .lineup a dd { order: 3; }
+.content main .lineup a dt + dd {order: 1; }
+
+.content aside {
+width: 100%;
+
+ }
+
+		.content aside h2 {
+margin-top: 1rem;
+}
+	aside .banner li{
+		width: 37%;
+	}
+	aside ul.banner{
+		display: flex;
+		justify-content: center;
+	}
+}
