@@ -207,7 +207,7 @@ padding: 0.9rem;
 color: #ffffff;
 text-align: center;
 background-color: #9B7B71;
-height: 3.7rem;
+height: 5rem;
 }
 
 
@@ -294,7 +294,4 @@ margin-top: 1rem;
 		display: flex;
 		justify-content: center;
 	}
-footer{
-height:5rem;
-}
 }
